@@ -148,7 +148,7 @@ export function Hero({ play }: { play: boolean }) {
         <div className="order-1 pb-10 pt-[30svh] text-center lg:py-0 lg:text-left">
           <h1
             data-hero-name
-            className="text-silver text-balance font-display text-[clamp(2.75rem,6vw,5.75rem)] font-semibold leading-[1.04] tracking-tight"
+            className="text-silver text-balance font-display text-[clamp(2.5rem,4.5vw,4.5rem)] font-semibold leading-[1.04] tracking-tight"
           >
             {profile.name}
           </h1>

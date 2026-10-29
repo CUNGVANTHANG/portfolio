@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Nguyễn Văn A - Full-stack Developer",
-    "description": "Portfolio of Nguyễn Văn A, a full-stack developer who turns ideas into fast, polished products.",
+    "title": "Cung Van Thang - Full-stack Developer",
+    "description": "Portfolio of Cung Van Thang, a full-stack developer who turns ideas into fast, polished products.",
     "siteUrl": "https://example.com",
     "lang": "en"
   },
   "profile": {
-    "name": "Nguyen Van A",
+    "name": "Cung Van Thang",
     "role": "Full-stack Developer",
     "tagline": "From the first line of code to production,\nI build software that scales, performs and lasts.",
     "avatar": "/images/portrait.webp",
@@ -15,7 +15,7 @@
     "socials": [
       {
         "label": "GitHub",
-        "url": "https://github.com/username"
+        "url": "https://github.com/CUNGVANTHANG"
       },
       {
         "label": "LinkedIn",
@@ -66,7 +66,7 @@
   "about": {
     "heading": "About me",
     "paragraphs": [
-      "Hi, I'm Nguyen Van A, a full-stack developer based in Hanoi with 3+ years of experience building web and mobile products.",
+      "Hi, I'm Cung Van Thang, a full-stack developer based in Hanoi with 3+ years of experience building web and mobile products.",
       "I enjoy turning ideas into fast, clean and reliable software, and I'm always learning something new."
     ],
     "education": {
