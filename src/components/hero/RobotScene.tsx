@@ -10,7 +10,7 @@ type Props = {
 
 /** Desktop robot: full figure beside the hero copy, watching the cursor. */
 export function RobotScene({ active, className = "" }: Props) {
-  const { box, stage, mounted, loaded, onLoad } = useSplineRobot(active, 1.5);
+  const { box, stage, mounted, loaded, onLoad } = useSplineRobot(active, 1.0);
 
   return (
     <div ref={box} className={`relative ${className}`}>
@@ -37,7 +37,7 @@ export function RobotScene({ active, className = "" }: Props) {
           */}
           <div
             ref={stage}
-            className="pointer-events-none absolute left-1/2 top-0 h-svh w-[125svh] -translate-x-1/2 [mask-image:linear-gradient(to_right,transparent,#000_16%,#000_84%,transparent),linear-gradient(to_bottom,#000_72%,transparent)] [mask-composite:intersect]"
+            className="pointer-events-none absolute left-1/2 top-0 h-svh w-[125svh] -translate-x-1/2 will-change-transform [transform:translateZ(0)] [mask-image:linear-gradient(to_right,transparent,#000_16%,#000_84%,transparent),linear-gradient(to_bottom,#000_72%,transparent)] [mask-composite:intersect]"
           >
             <Spline
               scene={ROBOT_SCENE}

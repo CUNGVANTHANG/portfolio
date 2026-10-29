@@ -81,8 +81,10 @@ function setRendering(app: Application, on: boolean) {
     const render = internal.render;
     let last = 0;
     const frame = (t: number) => {
+      // Cap at ~60fps (16ms) to prevent GPU thrashing on 120Hz/144Hz/165Hz Windows monitors
+      if (t - last < 16) return;
       const tracking = performance.now() - lastPointer < 2000;
-      if (!tracking && t - last < 30) return;
+      if (!tracking && t - last < 33) return; // ~30fps when idle
       last = t;
       render.call(internal, t);
     };
@@ -165,9 +167,26 @@ export function useSplineRobot(active: boolean, maxPixelRatio: number, waitForCa
     if (!loaded || !visible) return;
     const canvas = stage.current?.querySelector("canvas");
     if (!canvas) return;
-    const forward = (e: PointerEvent) => pointCanvasAt(canvas, e.clientX, e.clientY, e);
+    let raf = 0;
+    let latestX = 0;
+    let latestY = 0;
+    let latestEv: PointerEvent | undefined;
+    const forward = (e: PointerEvent) => {
+      latestX = e.clientX;
+      latestY = e.clientY;
+      latestEv = e;
+      if (!raf) {
+        raf = requestAnimationFrame(() => {
+          raf = 0;
+          pointCanvasAt(canvas, latestX, latestY, latestEv);
+        });
+      }
+    };
     window.addEventListener("pointermove", forward, { passive: true });
-    return () => window.removeEventListener("pointermove", forward);
+    return () => {
+      window.removeEventListener("pointermove", forward);
+      if (raf) cancelAnimationFrame(raf);
+    };
   }, [loaded, visible]);
 
   /*
