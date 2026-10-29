@@ -1,0 +1,413 @@
+{
+  "meta": {
+    "title": "Nguyễn Văn A - Full-stack Developer",
+    "description": "Portfolio of Nguyễn Văn A, a full-stack developer who turns ideas into fast, polished products.",
+    "siteUrl": "https://example.com",
+    "lang": "en"
+  },
+  "profile": {
+    "name": "Nguyen Van A",
+    "role": "Full-stack Developer",
+    "tagline": "From the first line of code to production,\nI build software that scales, performs and lasts.",
+    "avatar": "/images/portrait.webp",
+    "email": "hello@example.com",
+    "resume": "/cv.pdf",
+    "socials": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/username"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/username"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://facebook.com/username"
+      }
+    ]
+  },
+  "nav": {
+    "menu": "Menu",
+    "close": "Close",
+    "resume": "Resume",
+    "items": [
+      {
+        "id": "about",
+        "label": "About"
+      },
+      {
+        "id": "skills",
+        "label": "Skills"
+      },
+      {
+        "id": "experience",
+        "label": "Experience"
+      },
+      {
+        "id": "certificates",
+        "label": "Certificates"
+      },
+      {
+        "id": "projects",
+        "label": "Projects"
+      },
+      {
+        "id": "contact",
+        "label": "Contact"
+      }
+    ]
+  },
+  "hero": {
+    "ctaPrimary": "About",
+    "ctaSecondary": "Resume",
+    "scrollHint": "Scroll"
+  },
+  "about": {
+    "heading": "About me",
+    "paragraphs": [
+      "Hi, I'm Nguyen Van A, a full-stack developer based in Hanoi with 3+ years of experience building web and mobile products.",
+      "I enjoy turning ideas into fast, clean and reliable software, and I'm always learning something new."
+    ],
+    "education": {
+      "label": "Education",
+      "school": "VNU University of Engineering and Technology (UET)",
+      "detail": "B.Eng. in Information Technology · 2017 - 2021"
+    },
+    "softSkills": {
+      "label": "Soft skills",
+      "items": [
+        "Teamwork",
+        "Research",
+        "English B1"
+      ]
+    }
+  },
+  "skills": {
+    "heading": "The stack I build with",
+    "intro": "From interfaces to infrastructure - the tools I reach for every day.",
+    "groups": [
+      {
+        "name": "Frontend",
+        "description": "Interfaces that feel fast and polished.",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "Vue",
+          "Tailwind CSS",
+          "Redux",
+          "Vite"
+        ]
+      },
+      {
+        "name": "Backend",
+        "description": "APIs and services built to scale.",
+        "items": [
+          "Node.js",
+          "NestJS",
+          "FastAPI",
+          "GraphQL",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Prisma"
+        ]
+      },
+      {
+        "name": "Mobile",
+        "description": "Native-feeling apps for iOS and Android.",
+        "items": [
+          "React Native",
+          "Flutter",
+          "Expo",
+          "Swift",
+          "Kotlin"
+        ]
+      },
+      {
+        "name": "AI / ML",
+        "description": "Models, LLMs and data pipelines.",
+        "items": [
+          "Python",
+          "PyTorch",
+          "TensorFlow",
+          "Hugging Face",
+          "LangChain",
+          "Ollama"
+        ]
+      },
+      {
+        "name": "DevOps & Cloud",
+        "description": "Shipping, scaling and keeping things running.",
+        "items": [
+          "Docker",
+          "Kubernetes",
+          "AWS",
+          "Google Cloud",
+          "Terraform",
+          "GitHub Actions",
+          "Nginx",
+          "Vercel"
+        ]
+      },
+      {
+        "name": "Tools",
+        "description": "Everyday workflow and collaboration.",
+        "items": [
+          "Git",
+          "Figma",
+          "VS Code",
+          "Postman",
+          "Jira",
+          "Notion"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "heading": "Where I've worked",
+    "items": [
+      {
+        "period": "2024 - Present",
+        "title": "Senior Frontend Developer",
+        "place": "ABC Company",
+        "location": "Hanoi",
+        "description": "Leading a team of four front-end engineers building the company's design system and the core web platform behind its customer dashboard. I own the front-end architecture, review every pull request and work closely with design and product to turn rough ideas into shipped features every sprint.",
+        "highlights": [
+          "Raised the main app's Lighthouse performance score from 62 to 98 by moving to server rendering, code splitting and image optimisation",
+          "Designed and documented a component library of 60+ components now used across 5 products, cutting new-screen build time by about 40%",
+          "Set up visual regression testing with Storybook and Chromatic, so UI bugs are caught before they reach production",
+          "Mentored two junior developers who were both promoted within a year"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Storybook"
+        ]
+      },
+      {
+        "period": "2022 - 2024",
+        "title": "Full-stack Developer",
+        "place": "XYZ Startup",
+        "location": "Remote",
+        "description": "Joined as the third engineer and helped grow a B2B SaaS product from an early prototype to 10,000 paying users. Worked across the whole stack: React on the front end, NestJS and PostgreSQL on the back end, and AWS for infrastructure.",
+        "highlights": [
+          "Built a REST and webhook API that now serves over 1 million requests a day with 99.9% uptime",
+          "Set up CI/CD with GitHub Actions and Docker, taking deployments from a manual hour-long process to ten minutes",
+          "Designed the billing and subscription flow with Stripe, handling upgrades, refunds and invoices",
+          "Reduced the monthly AWS bill by 30% by right-sizing instances and adding caching with Redis"
+        ],
+        "stack": [
+          "React",
+          "NestJS",
+          "PostgreSQL",
+          "AWS"
+        ]
+      },
+      {
+        "period": "2021 - 2022",
+        "title": "Junior Web Developer",
+        "place": "DEF Agency",
+        "location": "Hanoi",
+        "description": "Built marketing websites, landing pages and small e-commerce stores for more than 15 clients, from local shops to regional brands. This is where I learned to ship on tight deadlines and talk with clients directly.",
+        "highlights": [
+          "Delivered 15+ responsive websites on time, most of them within two to three weeks",
+          "Built custom WordPress themes and plugins so clients could edit their own content",
+          "Improved page speed and SEO, helping one client double organic traffic in six months"
+        ],
+        "stack": [
+          "HTML/CSS",
+          "JavaScript",
+          "WordPress"
+        ]
+      }
+    ]
+  },
+  "certificates": {
+    "heading": "Certificates",
+    "intro": "Courses and exams that keep my skills sharp and verified.",
+    "view": "View certificate",
+    "close": "Close",
+    "items": [
+      {
+        "name": "AWS Certified Developer - Associate",
+        "issuer": "Amazon Web Services",
+        "logo": "AWS",
+        "year": "2024",
+        "image": "/images/certificates/aws-developer.webp"
+      },
+      {
+        "name": "AWS Certified Solutions Architect - Associate",
+        "issuer": "Amazon Web Services",
+        "logo": "AWS",
+        "year": "2024",
+        "image": "/images/certificates/aws-solutions-architect.webp"
+      },
+      {
+        "name": "Professional Cloud Developer",
+        "issuer": "Google Cloud",
+        "logo": "Google Cloud",
+        "year": "2023",
+        "image": "/images/certificates/gcp-cloud-developer.webp"
+      },
+      {
+        "name": "Certified Kubernetes Application Developer (CKAD)",
+        "issuer": "The Linux Foundation",
+        "logo": "The Linux Foundation",
+        "year": "2023",
+        "image": "/images/certificates/ckad.webp"
+      },
+      {
+        "name": "GitHub Actions",
+        "issuer": "GitHub",
+        "logo": "GitHub",
+        "year": "2023",
+        "image": "/images/certificates/github-actions.webp"
+      },
+      {
+        "name": "MongoDB Associate Developer (Node.js)",
+        "issuer": "MongoDB",
+        "logo": "MongoDB",
+        "year": "2022",
+        "image": "/images/certificates/mongodb-developer.webp"
+      },
+      {
+        "name": "HashiCorp Certified: Terraform Associate",
+        "issuer": "HashiCorp",
+        "logo": "HashiCorp",
+        "year": "2022",
+        "image": ""
+      },
+      {
+        "name": "Meta Front-End Developer Professional Certificate",
+        "issuer": "Meta · Coursera",
+        "logo": "Meta",
+        "year": "2022",
+        "image": ""
+      }
+    ],
+    "limit": 6,
+    "more": "Show all certificates ({n} more)",
+    "less": "Show less"
+  },
+  "projects": {
+    "heading": "Selected work",
+    "intro": "A few things I've designed, built and shipped.",
+    "view": "View project",
+    "limit": 4,
+    "more": "Show all projects ({n} more)",
+    "less": "Show less",
+    "items": [
+      {
+        "slug": "shopnow",
+        "title": "ShopNow",
+        "tagline": "An online store platform for small businesses",
+        "description": "Built an e-commerce site from scratch: cart, online payments, an admin dashboard and real-time revenue reports.",
+        "highlights": [
+          "40% faster page loads",
+          "5,000+ users in the first month"
+        ],
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Stripe"
+        ],
+        "image": "/images/projects/shopnow.webp"
+      },
+      {
+        "slug": "devchat",
+        "title": "DevChat",
+        "tagline": "Real-time chat for developer teams",
+        "description": "Channel-based chat, syntax-highlighted code sharing, real-time notifications and a GitHub bot that announces pull requests.",
+        "highlights": [
+          "Message latency under 100 ms",
+          "1,000 concurrent users"
+        ],
+        "stack": [
+          "React",
+          "Socket.io",
+          "Redis",
+          "Docker"
+        ],
+        "image": "/images/projects/devchat.webp"
+      },
+      {
+        "slug": "galaxy-3d",
+        "title": "Galaxy 3D",
+        "tagline": "An interactive 3D universe in the browser",
+        "description": "An interactive solar-system simulation in three.js with custom shaders, smooth camera controls, and great performance on phones.",
+        "highlights": [
+          "60 fps on mobile",
+          "Featured on Reddit r/threejs"
+        ],
+        "stack": [
+          "three.js",
+          "GLSL",
+          "TypeScript",
+          "Vite"
+        ],
+        "image": "/images/projects/galaxy-3d.webp"
+      },
+      {
+        "slug": "taskflow",
+        "title": "TaskFlow",
+        "tagline": "Drag-and-drop task management",
+        "description": "A drag-and-drop Kanban board with team permissions, progress analytics and offline sync.",
+        "highlights": [
+          "Works offline",
+          "85% test coverage"
+        ],
+        "stack": [
+          "Vue",
+          "Node.js",
+          "MongoDB",
+          "AWS"
+        ],
+        "image": "/images/projects/taskflow.webp"
+      },
+      {
+        "slug": "weathernow",
+        "title": "WeatherNow",
+        "tagline": "A calm, ad-free weather app",
+        "description": "Hourly and 10-day forecasts with smooth animated backgrounds, offline cache and home-screen widgets.",
+        "highlights": [
+          "4.8★ on the App Store",
+          "50,000+ downloads"
+        ],
+        "stack": [
+          "React Native",
+          "Expo",
+          "TypeScript"
+        ],
+        "image": ""
+      },
+      {
+        "slug": "documind",
+        "title": "DocuMind",
+        "tagline": "Chat with your team's documents",
+        "description": "An internal assistant that answers questions from company docs using retrieval-augmented generation, with sources for every answer.",
+        "highlights": [
+          "Answers in under 2 s",
+          "Used by 300 employees"
+        ],
+        "stack": [
+          "Python",
+          "LangChain",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "image": ""
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let's build something together.",
+    "message": "I'm open to new opportunities and always happy to talk about projects, jobs or just technology. The fastest way to reach me is email.",
+    "copied": "Email copied",
+    "hint": "Click to copy",
+    "handsAlt": "A human hand and a robot hand reaching toward each other"
+  }
+}
