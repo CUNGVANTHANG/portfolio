@@ -14,14 +14,35 @@ const geist = Geist({ variable: "--font-geist", subsets: ["latin", "vietnamese"]
 
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin", "vietnamese"] });
 
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : data.meta.siteUrl);
+
 export const metadata: Metadata = {
-  metadataBase: new URL(data.meta.siteUrl),
+  metadataBase: new URL(baseUrl),
   title: data.meta.title,
   description: data.meta.description,
   openGraph: {
     title: data.meta.title,
     description: data.meta.description,
     type: "website",
+    url: baseUrl,
+    images: [
+      {
+        url: data.profile.avatar,
+        alt: data.profile.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: data.meta.title,
+    description: data.meta.description,
+    images: [data.profile.avatar],
   },
 };
 
